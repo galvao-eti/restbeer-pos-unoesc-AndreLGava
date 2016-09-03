@@ -39,21 +39,21 @@ return array(
                         'action'     => 'insert',
                     ),
                     'constraints' => array(
- +                        'id' => '[0-9]+',
- +                    ),
- +                ),
- +            ),
- +            'delete' => array(
- +                'type' => 'Segment',
- +                'options' => array(
- +                    'route'    => '/delete/:id',
- +                    'defaults' => array(
- +                        'controller' => 'Application\Controller\Index',
- +                        'action'     => 'delete',
- +                    ),
- +                    'constraints' => array(
- +                        'id' => '[0-9]+',
- +                    ),
+                          'id' => '[0-9]+',
+                      ),
+                  ),
+              ),
+              'delete' => array(
+                  'type' => 'Segment',
+                  'options' => array(
+                      'route'    => '/delete/:id',
+                      'defaults' => array(
+                          'controller' => 'Application\Controller\Index',
+                          'action'     => 'delete',
+                      ),
+                      'constraints' => array(
+                          'id' => '[0-9]+',
+                      ),
                 ),
             ),
             // The following is a route to simplify getting started creating
